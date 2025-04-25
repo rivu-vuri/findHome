@@ -279,7 +279,7 @@ p{
 /* news-letter-section */
 
 .newsletter-section{
-    background-image: url("/images/indeximages/image\ 194.png");
+    background-image: url("../images/indeximages/image\ 194.png");
     background-color: #33323262;
     background-size: cover;
     background-repeat: no-repeat;
