@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url('../images/indeximages/scyscraper-city-evening-sunset-view-concept.png');
+    background-color: #38343486;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    min-height: 100vh;
+    padding: 100px 20px 40px;
+}
+
+.area{
+    width: 45px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.register-box{
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 30px 20px;
+    background-color: #e0e0e09c;
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+}
+
+.form-control{
+    background-color: #f0f4f8;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 16px;
+    font-size: 15px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #ffa726;
+}
+
+.signUp-btn{
+    background-color: #f0f4f8;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.signUp-btn:hover{
+    background-color: #e0e0e0;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #e65100;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* .forgot-link{
+    color: #e53935;
+    font-size: 14px;
+    text-decoration: none;
+    position: absolute;
+    float: right;
+    margin-top: 8px;
+    right: 10px;
+    bottom: -25px;
+} */
+
+.signup-text{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.signup-text a{
+    color: #e65100;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-arrow{
+    font-size: 24px;
+    color: #141313;
+    text-decoration: none;
+}
+
+/* .input-width{
+    width: 65px;
+} */
+
+
+/* media-queries */
+
+@media screen and (max-width: 565px) {
+    .register-box{
+        padding: 20px 15px;
+    }
+    
+    .title{
+        font-size: 22px;
+    }
+    
+    .form-control{
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+    
+    .signUp-btn{
+        padding: 10px;
+    }
+    
+    .area{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .back-arrow{
+        font-size: 20px;
+    }
+}

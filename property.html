@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/property.css" />
+    <title>Find Home</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-white py-3 mt-4 shadow position-absolute top-0 start-50 translate-middle-x rounded-pill z-3"
+        style="width: 90%; max-width: 1400px"
+      >
+        <div class="container px-4">
+          <a class="navbar-brand d-flex align-items-center" href="./index.html">
+            <img
+              src="./images/indeximages/REAL ESATE LOGO.png"
+              alt="logo_nav_realest"
+              class="me-2"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="mainNav"
+          >
+            <ul class="navbar-nav mx-auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./index.html">HOME</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./agent.html">AGENT</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./blog.html">BLOG</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="#">PROPERTY</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./contactUs.html">CONTACT US</a>
+              </li>
+            </ul>
+            <div class="d-flex gap-2">
+              <a href="./login.html" class="btn btn-outline-dark">Login</a>
+              <a href="./signup.html" class="btn btn-danger rounded-pill px-4"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="hero-section text-white text-start d-flex align-items-center position-relative z-1"
+      >
+        <div class="container">
+          <h1 class="fw-bold display-5">Property</h1>
+        </div>
+      </section>
+      <section class="property-section py-5">
+        <div class="container">
+          <!-- Breadcrumb -->
+          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item fw-semibold">
+                <a href="./index.html" class="text-danger text-decoration-none"
+                  >Find Home</a
+                >
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Property
+              </li>
+            </ol>
+          </nav>
+
+          <hr />
+
+          <div class="row">
+            <!-- Sidebar Filters -->
+            <div class="col-lg-3">
+              <div class="border p-3 rounded shadow-sm sidebar">
+                <h5><i class="fa-solid fa-filter me-2"></i>Filters</h5>
+                <hr />
+                <div class="mb-3">
+                  <label class="form-label">City</label>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="city"
+                      id="kol"
+                      checked
+                    />
+                    <label class="form-check-label" for="kol">Kolkata</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="city"
+                      id="chen"
+                    />
+                    <label class="form-check-label" for="chen">Chennai</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="city"
+                      id="hyd"
+                    />
+                    <label class="form-check-label" for="hyd">Hyderabad</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="city"
+                      id="del"
+                    />
+                    <label class="form-check-label" for="del">Delhi</label>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Property Type</label>
+                  <select class="form-select">
+                    <option>Flat</option>
+                    <option>Villa</option>
+                    <option>House</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">BHK</label>
+                  <select class="form-select">
+                    <option>1 BHK</option>
+                    <option>2 BHK</option>
+                    <option>3 BHK</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Budget</label>
+                  <input type="range" class="form-range" />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Home Size</label>
+                  <input type="range" class="form-range" />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Garage Size</label>
+                  <input type="range" class="form-range" />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Posted By</label>
+                  <select class="form-select">
+                    <option>Owner</option>
+                    <option>Agent</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Amenities</label>
+                  <select class="form-select">
+                    <option>Gym</option>
+                    <option>Swimming Pool</option>
+                    <option>Parking</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Bathroom</label>
+                  <select class="form-select">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3+</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Property Listing -->
+            <div class="col-lg-9">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3 mt-3"
+              >
+                <h6>3200 Results | Flats for Sale in Kolkata</h6>
+                <select class="form-select w-auto">
+                  <option selected>Sort By: Default</option>
+                  <option>Price: Low to High</option>
+                  <option>Price: High to Low</option>
+                </select>
+              </div>
+
+              <!-- Single Property Card -->
+              <div class="property-card d-flex shadow-sm">
+                <div class="property-image position-relative col-md-4">
+                  <span class="for-sale-badge">for sale</span>
+                  <img
+                    src="./images/propertyimages/image 27.png"
+                    alt="property"
+                  />
+                </div>
+                <div class="property-info p-3 col-md-8">
+                  <h5>Sunrise Point</h5>
+                  <p class="property-meta">
+                    <i class="fas fa-map-marker-alt"></i> Rajarhat, Newtown,
+                    Kolkata
+                  </p>
+                  <div class="d-flex flex-wrap mb-2">
+                    <span class="icon-text"><i class="fas fa-bed"></i> 4</span>
+                    <span class="icon-text"><i class="fas fa-bath"></i> 2</span>
+                    <span class="icon-text"
+                      ><i class="fas fa-vector-square"></i> 500</span
+                    >
+                  </div>
+                  <p class="text-muted mb-2">
+                    Furus adipiscing amet urna elitbus ultrices per massa.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">$12000.00</span>
+                    <a href="./propertyDetails.html" class="btn view-btn text-decoration-none">View Details</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-card d-flex shadow-sm">
+                <div class="property-image position-relative col-md-4">
+                  <span class="for-sale-badge">for sale</span>
+                  <img
+                    src="./images/propertyimages/image (27).png"
+                    alt="property"
+                  />
+                </div>
+                <div class="property-info p-3 col-md-8">
+                  <h5>Sunrise Point</h5>
+                  <p class="property-meta">
+                    <i class="fas fa-map-marker-alt"></i> Rajarhat, Newtown,
+                    Kolkata
+                  </p>
+                  <div class="d-flex flex-wrap mb-2">
+                    <span class="icon-text"><i class="fas fa-bed"></i> 4</span>
+                    <span class="icon-text"><i class="fas fa-bath"></i> 2</span>
+                    <span class="icon-text"
+                      ><i class="fas fa-vector-square"></i> 500</span
+                    >
+                  </div>
+                  <p class="text-muted mb-2">
+                    Furus adipiscing amet urna elitbus ultrices per massa.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">$12000.00</span>
+                    <a href="./propertyDetails.html" class="btn view-btn text-decoration-none">View Details</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-card d-flex shadow-sm">
+                <div class="property-image position-relative col-md-4">
+                  <span class="for-sale-badge">for sale</span>
+                  <img
+                    src="./images/propertyimages/image (26).png"
+                    alt="property"
+                  />
+                </div>
+                <div class="property-info p-3 col-md-8">
+                  <h5>Sunrise Point</h5>
+                  <p class="property-meta">
+                    <i class="fas fa-map-marker-alt"></i> Rajarhat, Newtown,
+                    Kolkata
+                  </p>
+                  <div class="d-flex flex-wrap mb-2">
+                    <span class="icon-text"><i class="fas fa-bed"></i> 4</span>
+                    <span class="icon-text"><i class="fas fa-bath"></i> 2</span>
+                    <span class="icon-text"
+                      ><i class="fas fa-vector-square"></i> 500</span
+                    >
+                  </div>
+                  <p class="text-muted mb-2">
+                    Furus adipiscing amet urna elitbus ultrices per massa.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">$12000.00</span>
+                    <a href="./propertyDetails.html" class="btn view-btn text-decoration-none">View Details</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-card d-flex shadow-sm">
+                <div class="property-image position-relative col-md-4">
+                  <span class="for-sale-badge">for sale</span>
+                  <img
+                    src="./images/propertyimages/image (25).png"
+                    alt="property"
+                  />
+                </div>
+                <div class="property-info p-3 col-md-8">
+                  <h5>Sunrise Point</h5>
+                  <p class="property-meta">
+                    <i class="fas fa-map-marker-alt"></i> Rajarhat, Newtown,
+                    Kolkata
+                  </p>
+                  <div class="d-flex flex-wrap mb-2">
+                    <span class="icon-text"><i class="fas fa-bed"></i> 4</span>
+                    <span class="icon-text"><i class="fas fa-bath"></i> 2</span>
+                    <span class="icon-text"
+                      ><i class="fas fa-vector-square"></i> 500</span
+                    >
+                  </div>
+                  <p class="text-muted mb-2">
+                    Furus adipiscing amet urna elitbus ultrices per massa.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">$12000.00</span>
+                    <a href="./propertyDetails.html" class="btn view-btn text-decoration-none">View Details</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Repeat property-card block for other properties -->
+              <!-- Pagination -->
+              <nav>
+                <ul class="pagination mt-5">
+                  <li class="page-item disabled">
+                    <a class="page-link">Prev</a>
+                  </li>
+                  <li class="page-item active"><a class="page-link">1</a></li>
+                  <li class="page-item"><a class="page-link">2</a></li>
+                  <li class="page-item"><a class="page-link">3</a></li>
+                  <li class="page-item"><a class="page-link">Next</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer py-3 mt-5">
+      <div class="container">
+        <!-- Top Row -->
+        <div
+          class="d-flex justify-content-between align-items-center mb-4 flex-wrap"
+        >
+          <!-- Logo -->
+          <div class="company-logo mb-3 mb-md-0">
+            <a href="./index.html">
+              <img
+                src="./images/indeximages/REAL ESATE LOGO (1).png"
+                alt="logo_footer_realestate"
+              />
+            </a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="follow-us-social-links">
+            <p class="footer-title mb-2 text-center">Follow us</p>
+            <div class="social-icons text-end">
+              <a href="#"><i class="fab fa-facebook-f mx-1"></i></a>
+              <a href="#"><i class="fab fa-instagram mx-1"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in mx-1"></i></a>
+              <a href="#"><i class="fab fa-twitter mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="horizontal-line" />
+
+        <!-- Middle Row -->
+        <div class="row gy-4 py-3">
+          <!-- Quick Links -->
+          <div class="col-6 col-md-3">
+            <p class="footer-title">Quick Links</p>
+            <ul class="list-unstyled">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./agent.html">Agent</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="#">Property</a></li>
+              <li><a href="./contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Address -->
+          <div class="col-6 col-md-3">
+            <p class="footer-title">Our Address</p>
+            <p>Kolkata, Sector-5, College More</p>
+            <p>568586, West Bengal</p>
+          </div>
+
+          <!-- Contact Info -->
+          <!-- <div class="col-6 col-md-3">
+            <p class="footer-title">Contact Us</p>
+            <p>Gmail - guchhaitgbca@gmail.com</p>
+            <p>Ph No - 09345678677</p>
+          </div> -->
+
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <p class="footer-title">Contact Us</p>
+            <p class="mb-1">Gmail - <span class="text-break">guchhaitgbca@gmail.com</span></p>
+            <p class="mb-0">Ph No - 09345678677</p>
+          </div>
+
+          <!-- App Buttons -->
+          <div class="col-6 col-md-3">
+            <p class="footer-title">Get The App</p>
+            <a href="#" class="d-inline-block mb-2 w-100"
+              ><img
+                src="./images/indeximages/Group 69.png"
+                alt="gplay"
+                class="img-fluid w-100" /></a
+            ><br />
+            <a href="#" class="d-inline-block w-100"
+              ><img
+                src="./images/indeximages/Group 70.png"
+                alt="appStore"
+                class="img-fluid w-100 mt-3"
+            /></a>
+          </div>
+        </div>
+
+        <hr class="horizontal-line" />
+
+        <!-- Bottom -->
+        <div class="footer-bottom text-center">
+          Copy Right &copy;Toyesh Ganguli | 2025, FIND HOME
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

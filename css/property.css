@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* nav-section */
+
+.navbar-nav .nav-link.active{
+    border-bottom: 2px solid #e85d75;
+    color: #e85d75;;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #e85d75;
+    border-bottom: 2px solid #e85d75;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    color: #e85d75;
+    border-bottom: 2px solid #e85d75;
+    font-weight: 600;
+}
+
+/* hero-section */
+
+.hero-section h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section{
+    background-image: url('../images/propertyimages/scyscraper-city-evening-sunset-view-concept\ \(1\).png');
+    background-color: #1e1d1d24;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 90vh;
+    padding-top: 180px; 
+}
+  
+.hero-section select:focus,
+.hero-section button:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+/* property-cards-section */
+
+.property-card{
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.property-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.for-sale-badge{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #e53963;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.property-info h5{
+    font-weight: 600;
+}
+
+.icon-text{
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.icon-text i{
+    color: #e53963;
+    margin-right: 5px;
+}
+
+.property-meta{
+    font-size: 13px;
+    color: #777;
+}
+
+.price{
+    font-weight: 600;
+    color: #e53963;
+}
+
+.view-btn{
+    background-color: #e53963;
+    color: #fff;
+    border: none;
+}
+
+.view-btn:hover{
+    background-color: #c62848;
+}
+
+.sidebar label{
+    font-weight: 500;
+}
+
+.form-check-label{
+    margin-left: 8px;
+}
+
+.pagination{
+    justify-content: center;
+}
+
+/* footer-section */
+
+.footer{
+    background-color: #434681;
+    color: white;
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+  
+.footer-title{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+  
+.social-icons a{
+    color: #fff;
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.app-btn i{
+    margin-right: 8px;
+    font-size: 18px;
+}
+  
+.horizontal-line{
+    border-color: rgba(255,255,255,0.3);
+}
+  
+.footer-bottom{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+/* media-query */
+
+@media screen and (max-width: 991px) {
+    /* nav-section */
+
+    nav.navbar{
+        border-radius: 0 !important;
+        width: 100% !important;
+        left: 0 !important;
+        transform: none !important;
+        margin-top: 0;
+    }
+    
+    .navbar-collapse{
+        background-color: white;
+        border-radius: 0 0 12px 12px;
+        padding: 1rem;
+    }
+    
+    .navbar-nav{
+        flex-direction: column !important;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .navbar-nav .nav-item{
+        width: 100%;
+    }
+    
+    .navbar-nav .nav-link{
+        display: block;
+        padding-left: 0;
+        border: none;
+    }
+    
+    .d-flex.gap-2{
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    
+    .d-flex.gap-2 a{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* footer-section */
+
+    .footer-title{
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+    }
+    
+      .footer-section .col-12{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* navbar-section */
+    
+    .navbar-nav .nav-link{
+        font-size: 14px;
+    }
+    
+    .navbar-brand img{
+        max-width: 120px;
+    }
+
+    /* footer-section */
+
+    .footer-section p{
+        font-size: 14px;
+        word-break: break-word;
+    }
+}

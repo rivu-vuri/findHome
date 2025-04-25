@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/contactUs.css" />
+    <title>Find Home</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-white py-3 mt-4 shadow position-absolute top-0 start-50 translate-middle-x rounded-pill z-3"
+        style="width: 90%; max-width: 1400px"
+      >
+        <div class="container px-4">
+          <a class="navbar-brand d-flex align-items-center" href="./index.html">
+            <img
+              src="./images/indeximages/REAL ESATE LOGO.png"
+              alt="logo_nav_realest"
+              class="me-2"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="mainNav"
+          >
+            <ul class="navbar-nav mx-auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./index.html">HOME</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./agent.html">AGENT</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./blog.html">BLOG</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./property.html">PROPERTY</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="#">CONTACT US</a>
+              </li>
+            </ul>
+            <div class="d-flex gap-2">
+              <a href="./login.html" class="btn btn-outline-dark">Login</a>
+              <a href="./signup.html" class="btn btn-danger rounded-pill px-4"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="hero-section text-white text-start d-flex align-items-center position-relative z-1"
+      >
+        <div class="container">
+          <h1 class="fw-bold display-5">Contact Us</h1>
+        </div>
+      </section>
+      <section class="contactUs-section py-5">
+        <div class="container">
+          <!-- Breadcrumb -->
+          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item fw-semibold">
+                <a href="./index.html" class="text-danger text-decoration-none"
+                  >Find Home</a
+                >
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Contact Us
+              </li>
+            </ol>
+          </nav>
+
+          <hr />
+
+          <div class="text-start mb-4">
+            <h2 class="fw-bold">Let's Connect</h2>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+              saepe cum corrupti quaerat aliquid veritatis, adipisci modi quos
+              dignissimos laudantium nulla blanditiis qui ipsa aliquam placeat,
+              rerum doloremque! Provident, vero.
+            </p>
+          </div>
+
+          <div class="border border-secondary-subtle p-4">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <label class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="enter name"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="enter name"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="enter Email"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="enter phone no"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Inquiry Type</label>
+                  <select class="form-select">
+                    <option selected disabled>type</option>
+                    <option>Buying</option>
+                    <option>Selling</option>
+                    <option>Rental</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">How Did You Know About Us?</label>
+                  <select class="form-select">
+                    <option selected disabled>type</option>
+                    <option>Google</option>
+                    <option>Facebook</option>
+                    <option>Friends</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="enter message"
+                  ></textarea>
+                </div>
+                <div
+                  class="col-12 d-flex justify-content-between align-items-center"
+                >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="terms"
+                    />
+                    <label class="form-check-label" for="terms">
+                      Accept Use of Terms And Policy
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-danger px-4">
+                    Send Your Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="office-location py-5">
+        <div class="container">
+          <div class="mb-4">
+            <h2 class="mb-2">Discover Our Office Location</h2>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur. Ipsum sed magna sit velit.
+              Massa lacus eleifend elit amet sapien aliquam iaculis dui. Fermen
+              lectus tristique viverra eu viverra aliquam. Tempus amet ac
+              sollicitudin sagittis nisi elementum ac ornare.
+            </p>
+          </div>
+
+          <div class="row align-items-center g-4">
+            <div class="col-md-7">
+              <div class="border rounded p-4 h-100 shadow-sm">
+                <h5 class="fw-bold mb-1">Main Office</h5>
+                <h6 class="mb-3 text-secondary">
+                  Sector-5, College More, Kolkata
+                </h6>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur. Ipsum sed magna sit
+                  velit. Massa lacus eleifend elit amet sapien aliquam iaculis
+                  dui. Fermen lectus tristique viverra eu viverra aliquam.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                  <div
+                    class="d-flex align-items-center gap-2 border rounded px-3 py-2"
+                  >
+                    <i class="fas fa-envelope text-danger"></i>
+                    <span>g@gmail.com</span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center gap-2 border rounded px-3 py-2"
+                  >
+                    <i class="fas fa-phone-alt text-danger"></i>
+                    <span>+91-7856354552</span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center gap-2 border rounded px-3 py-2"
+                  >
+                    <i class="fas fa-map-marker-alt text-danger"></i>
+                    <span>sector-5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="ratio ratio-16x9 border rounded shadow-sm">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14736.293674794159!2d88.42368324907328!3d22.576357221821368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275b020703c0d%3A0xece6f8e0fc2e1613!2sSector%20V%2C%20Bidhannagar%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1745052439613!5m2!1sen!2sin"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer py-3 mt-5">
+      <div class="container">
+        <!-- Top Row -->
+        <div
+          class="d-flex justify-content-between align-items-center mb-4 flex-wrap"
+        >
+          <!-- Logo -->
+          <div class="company-logo mb-3 mb-md-0">
+            <a href="./index.html">
+              <img
+                src="./images/indeximages/REAL ESATE LOGO (1).png"
+                alt="logo_footer_realestate"
+              />
+            </a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="follow-us-social-links">
+            <p class="footer-title mb-2 text-center">Follow us</p>
+            <div class="social-icons text-end">
+              <a href="#"><i class="fab fa-facebook-f mx-1"></i></a>
+              <a href="#"><i class="fab fa-instagram mx-1"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in mx-1"></i></a>
+              <a href="#"><i class="fab fa-twitter mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="horizontal-line" />
+
+        <!-- Middle Row -->
+        <div class="row gy-4 py-3">
+          <!-- Quick Links -->
+          <div class="col-6 col-md-3">
+            <p class="footer-title">Quick Links</p>
+            <ul class="list-unstyled">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./agent.html">Agent</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./property.html">Property</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Address -->
+          <div class="col-6 col-md-3">
+            <p class="footer-title">Our Address</p>
+            <p>Kolkata, Sector-5, College More</p>
+            <p>568586, West Bengal</p>
+          </div>
+
+          <!-- Contact Info -->
+          <!-- <div class="col-6 col-md-3">
+            <p class="footer-title">Contact Us</p>
+            <p>Gmail - guchhaitgbca@gmail.com</p>
+            <p>Ph No - 09345678677</p>
+          </div> -->
+
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <p class="footer-title">Contact Us</p>
+            <p class="mb-1">Gmail - <span class="text-break">guchhaitgbca@gmail.com</span></p>
+            <p class="mb-0">Ph No - 09345678677</p>
+          </div>
+
+          <!-- App Buttons -->
+          <div class="col-6 col-md-3">
+            <p class="footer-title">Get The App</p>
+            <a href="#" class="d-inline-block mb-2 w-100"
+              ><img
+                src="./images/indeximages/Group 69.png"
+                alt="gplay"
+                class="img-fluid w-100" /></a
+            ><br />
+            <a href="#" class="d-inline-block w-100"
+              ><img
+                src="./images/indeximages/Group 70.png"
+                alt="appStore"
+                class="img-fluid w-100 mt-3"
+            /></a>
+          </div>
+        </div>
+
+        <hr class="horizontal-line" />
+
+        <!-- Bottom -->
+        <div class="footer-bottom text-center">
+          Copy Right &copy;Toyesh Ganguli | 2025, FIND HOME
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

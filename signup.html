@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/signup.css" />
+    <title>Find Home</title>
+  </head>
+  <body>
+    <div class="container position-relative min-vh-100 d-flex justify-content-center align-items-center">
+      <div class="area d-flex align-items-center justify-content-center">
+        <a href="./index.html" class="back-arrow">&#8592;</a>
+      </div>
+
+      <div class="register-box mx-auto">
+        <div class="title">Register With Us</div>
+
+        <form id="registerForm">
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter Your Email"
+            />
+            <small class="text-danger d-none" id="emailError">
+              Please enter a valid email!
+            </small>
+          </div>
+          <div class="mb-3 position-relative">
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Password"
+            />
+            <small class="text-danger d-none" id="passwordError">
+              Password cannot be empty.
+            </small>
+          </div>
+          <div class="mb-3">
+            <input
+              type="number"
+              class="form-control"
+              id="v-code"
+              placeholder="Verification Code"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="checkbox"
+              class="input-width"
+            />
+            By Sign Up Accept <a href="#" class="text-decoration-none text-primary">Terms And Condition</a>
+          </div>
+          <div class="mb-3">
+            <button type="submit" class="signUp-btn">
+              <a href="#" class="text-decoration-none">Sign Up</a>
+            </button>
+          </div>
+        </form>
+
+        <div class="signup-text">
+          Already Account ? <a href="./login.html">Login</a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

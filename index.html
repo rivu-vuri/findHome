@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Find Home</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-white py-3 mt-4 shadow position-absolute top-0 start-50 translate-middle-x rounded-pill z-3"
+        style="width: 90%; max-width: 1400px"
+      >
+        <div class="container px-4">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="./images/indeximages/REAL ESATE LOGO.png"
+              alt="logo_nav_realest"
+              class="me-2"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="mainNav"
+          >
+            <ul class="navbar-nav mx-auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="#">HOME</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./agent.html">AGENT</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./blog.html">BLOG</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./property.html">PROPERTY</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./contactUs.html">CONTACT US</a>
+              </li>
+            </ul>
+            <div class="d-flex gap-2">
+              <a href="./login.html" class="btn btn-outline-dark">Login</a>
+              <a href="./signup.html" class="btn btn-danger rounded-pill px-4">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="hero-section text-white text-start d-flex align-items-center position-relative z-1"
+      >
+        <div class="container">
+          <div class="mb-3">
+            <a href="#" class="btn btn-outline-light rounded-pill px-4"
+              >LET US GUIDE YOUR HOME</a
+            >
+          </div>
+          <h1 class="fw-bold display-5">Find a Perfect Home you Love...!</h1>
+
+          <!-- Search Bar -->
+          <div
+            class="bg-dark-subtle rounded-pill p-3 shadow d-flex flex-wrap align-items-center mt-4 gap-2"
+            style="max-width: 700px; position: relative;"
+          >
+            <!-- Category Dropdown -->
+            <div class="dropdown position-relative">
+              <button class="form-select border-0 rounded-pill" style="width: 180px">Category</button>
+              <div class="dropdown-menu-hover">
+                <button class="dropdown-item active">Apartments</button>
+                <button class="dropdown-item">Condos</button>
+                <button class="dropdown-item">Houses</button>
+                <button class="dropdown-item">Villas</button>
+              </div>
+            </div>
+
+            <!-- Location Dropdown -->
+            <div class="dropdown position-relative">
+              <button class="form-select border-0 rounded-pill" style="width: 180px">Location</button>
+              <div class="dropdown-menu-hover">
+                <button class="dropdown-item active">Kolkata</button>
+                <button class="dropdown-item">Mumbai</button>
+                <button class="dropdown-item">Chennai</button>
+                <button class="dropdown-item">Delhi</button>
+              </div>
+            </div>
+            <button
+              class="btn btn-danger rounded-pill px-4 d-flex align-items-center"
+            >
+              <i class="fa-solid fa-magnifying-glass me-2 setThisButton"></i> Search Property
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Statistics Section (Floating at bottom-left of Hero) -->
+      <section class="stats-section position-relative">
+        <div class="container position-relative">
+          <div
+            class="stats-card bg-white shadow p-4 ps-md-5 pe-md-5 rounded-end-5 d-flex flex-wrap justify-content-between text-center position-absolute"
+          >
+            <div class="flex-fill py-2">
+              <h4 class="mb-1 fw-bold">500+</h4>
+              <p class="mb-0 text-muted">Property Ready</p>
+            </div>
+            <div class="flex-fill py-2">
+              <h4 class="mb-1 fw-bold">680</h4>
+              <p class="mb-0 text-muted">Award Winning</p>
+            </div>
+            <div class="flex-fill py-2">
+              <h4 class="mb-1 fw-bold">8k+</h4>
+              <p class="mb-0 text-muted">Happy Customer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Homes For You Section -->
+      <section class="py-5 bg-light">
+        <div class="container text-center">
+          <h2 class="fw-bold">Homes For You</h2>
+          <p class="fw-semibold">Find a Home Based On Your Search History</p>
+
+          <div
+            id="propertyCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- Card 1 -->
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="card shadow border-0 rounded-4 overflow-hidden"
+                    style="width: 20rem"
+                  >
+                    <img
+                      src="./images/indeximages/IMAGE (2).png"
+                      class="card-img-top"
+                      alt="Sunrise Point"
+                    />
+                    <div class="card-body text-start">
+                      <h6 class="fw-bold mb-1">Sunrise Point</h6>
+                      <p class="text-muted small mb-2">
+                        <i class="fa-solid fa-location-dot me-1"></i>Rajarhat,
+                        Newtown
+                      </p>
+                      <p class="text-danger fw-semibold">$12000</p>
+                      <div
+                        class="d-flex justify-content-between text-muted small"
+                      >
+                        <span><i class="fa-solid fa-bed me-1"></i>4</span>
+                        <span><i class="fa-solid fa-bath me-1"></i>2</span>
+                        <span
+                          ><i class="fa-solid fa-maximize me-1"></i>500</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="card shadow border-0 rounded-4 overflow-hidden"
+                    style="width: 20rem"
+                  >
+                    <img
+                      src="./images/indeximages/image (1).png"
+                      class="card-img-top"
+                      alt="Green Island"
+                    />
+                    <div class="card-body text-start">
+                      <h6 class="fw-bold mb-1">Green Island</h6>
+                      <p class="text-muted small mb-2">
+                        <i class="fa-solid fa-location-dot me-1"></i>Rajarhat,
+                        Newtown
+                      </p>
+                      <p class="text-danger fw-semibold">$12000</p>
+                      <div
+                        class="d-flex justify-content-between text-muted small"
+                      >
+                        <span><i class="fa-solid fa-bed me-1"></i>4</span>
+                        <span><i class="fa-solid fa-bath me-1"></i>2</span>
+                        <span
+                          ><i class="fa-solid fa-maximize me-1"></i>500</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="card shadow border-0 rounded-4 overflow-hidden"
+                    style="width: 20rem"
+                  >
+                    <img
+                      src="./images/indeximages/image.png"
+                      class="card-img-top"
+                      alt="Dream Residency"
+                    />
+                    <div class="card-body text-start">
+                      <h6 class="fw-bold mb-1">Dream Residency</h6>
+                      <p class="text-muted small mb-2">
+                        <i class="fa-solid fa-location-dot me-1"></i>Rajarhat,
+                        Newtown
+                      </p>
+                      <p class="text-danger fw-semibold">$12000</p>
+                      <div
+                        class="d-flex justify-content-between text-muted small"
+                      >
+                        <span><i class="fa-solid fa-bed me-1"></i>4</span>
+                        <span><i class="fa-solid fa-bath me-1"></i>2</span>
+                        <span
+                          ><i class="fa-solid fa-maximize me-1"></i>500</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#propertyCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark rounded-circle"
+                aria-hidden="true"
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#propertyCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark rounded-circle"
+                aria-hidden="true"
+              ></span>
+            </button>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators mt-3">
+              <button
+                type="button"
+                data-bs-target="#propertyCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#propertyCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#propertyCarousel"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 bg-white">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold">Best Properties</h2>
+            <p class="fw-semibold">Find Best Property In Your City</p>
+          </div>
+
+          <div class="row g-3">
+            <!-- Left Column -->
+            <div class="col-lg-8">
+              <div class="row g-3">
+                <!-- Top Large Image -->
+                <div class="col-12">
+                  <img
+                    src="./images/indeximages/image (5).png"
+                    class="img-fluid rounded-4"
+                    alt="Main House"
+                  />
+                </div>
+                <!-- Bottom Left Cards -->
+                <div class="col-md-6">
+                  <div
+                    class="bg-danger text-white p-4 rounded-4 h-100 d-flex flex-column justify-content-between property-card"
+                  >
+                    <div>
+                      <h3 class="fw-bold">280+<br />Properties</h3>
+                      <p class="small">
+                        Explore Our Wide Variety of Property To Fit With Your
+                        Dream Today
+                      </p>
+                    </div>
+                    <div class="text-end">
+                      <button class="btn">
+                        <i class="fas fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <img
+                    src="./images/indeximages/image (4).png"
+                    class="img-fluid rounded-4"
+                    alt="Interior"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-4">
+              <div class="position-relative h-100">
+                <img
+                  src="./images/indeximages/image (3).png"
+                  class="img-fluid rounded-4 w-100 h-100 object-fit-cover"
+                  alt="Featured Home"
+                />
+
+                <!-- Featured Tag -->
+                <span
+                  class="badge bg-light text-dark position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill shadow-sm"
+                  >Featured</span
+                >
+
+                <!-- Property Info Card -->
+                <div
+                  class="glass-card p-3 position-absolute start-50 translate-middle-x bottom-0 mb-3 w-100"
+                >
+                  <h6 class="fw-bold mb-1">Sunrise Point</h6>
+                  <p class="text-muted small mb-2">
+                    <i class="fa-solid fa-location-dot me-1"></i>Rajarhat,
+                    Newtown
+                  </p>
+                  <p class="text-danger fw-semibold mb-2">$12000</p>
+                  <div class="d-flex justify-content-between text-muted small">
+                    <span><i class="fa-solid fa-bed me-1"></i>4</span>
+                    <span><i class="fa-solid fa-bath me-1"></i>2</span>
+                    <span><i class="fa-solid fa-maximize me-1"></i>500</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 text-center background">
+        <div class="container">
+          <h2 class="fw-bold mb-2">Why You Should Work With Us</h2>
+          <p class="fw-semibold mb-5">Find Best Properties In Your City</p>
+
+          <div class="row g-4">
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-duration="1500">
+              <div class="p-3">
+                <i
+                  class="fa-solid fa-house-chimney fa-2x mb-3 text-primary"
+                ></i>
+                <h5 class="fw-semibold">Find Your Future Home</h5>
+                <p class="text-muted small mb-0">
+                  We help you to find a new home by offering a smart real estate
+                  idea
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-duration="1500">
+              <div class="p-3">
+                <i class="fa-solid fa-handshake fa-2x mb-3 text-primary"></i>
+                <h5 class="fw-semibold">Experience Agent</h5>
+                <p class="text-muted small mb-0">
+                  Find an experienced agent who knows the market best
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-duration="1500">
+              <div class="p-3">
+                <i class="fa-solid fa-sack-dollar fa-2x mb-3 text-primary"></i>
+                <h5 class="fw-semibold">Home Buy</h5>
+                <p class="text-muted small mb-0">
+                  Millions of houses and apartments are available in your city
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-duration="1500">
+              <div class="p-3">
+                <i
+                  class="fa-solid fa-file-circle-plus fa-2x mb-3 text-primary"
+                ></i>
+                <h5 class="fw-semibold">List Your Own Property</h5>
+                <p class="text-muted small mb-0">
+                  Millions of houses and apartments are available in your city
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 bgcolor">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Image -->
+            <div
+              class="col-md-6 mb-4 mb-md-0 justify-content-center position-relative"
+            >
+              <img
+                src="./images/indeximages/Rectangle 61.png"
+                alt="red background box"
+                class="img-fluid red-box-img position-relative z-1"
+              />
+              <img
+                src="./images/indeximages/Group 52.png"
+                alt="Real Estate Lady"
+                class="lady-img position-absolute z-2"
+              />
+            </div>
+
+            <!-- Text & Buttons -->
+            <div class="col-md-6">
+              <div class="leftMargin">
+                <h2 class="fw-bold mb-3 my-4 width_buy_cell">
+                  Looking to Buy or Sell a Home ?
+                </h2>
+                <p class="text-muted mb-4 my-4">
+                  We are the most respected RealEstate Company in the industry. We
+                  deliver extraordinary facility to the customer.
+                </p>
+              </div>
+
+              <div class="d-flex gap-3 flex-wrap my-4">
+                <div class="text-center font-style mLeft">
+                  <small class="text-uppercase fw-semibold my-3"
+                    >Buy a Property</small
+                  >
+                  
+                    <a href="./property.html" class="btn btn-outline-dark w-100 mt-2 text-decoration-none">
+                      Buy Now
+                    </a>
+                  
+                </div>
+                <div class="text-center mLeft">
+                  <small class="text-uppercase fw-semibold my-3"
+                    >Sell a Property</small
+                  >
+                  
+                    <a href="./selling.html" class="btn btn-outline-dark w-100 mt-2 text-decoration-none">
+                      Sell Now
+                    </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Left Text Section -->
+            <div class="col-md-6 mb-4 mb-md-0">
+              <h2 class="fw-bold mb-3 m-width">
+                How it Will Works? Find a Perfect Home
+              </h2>
+              <p class="text-muted mb-4">
+                Lorem ipsum dolor sit amet consectetur. Turpis a in laoreet
+                libero pharetra hendrerit
+              </p>
+
+              <!-- Step Items -->
+              <div class="mb-4">
+                <div class="d-flex align-items-start mb-3" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                  <img
+                    src="./images/indeximages/Group 54.png"
+                    class="me-3"
+                    alt="Icon"
+                    width="40"
+                  />
+                  <div>
+                    <h6 class="mb-1">Find real estate</h6>
+                    <p class="mb-0 text-muted">
+                      Lorem ipsum dolor sit amet consectetur. Turpis a in
+                      laoreet libero pharetra hendrerit.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-3" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                  <img
+                    src="./images/indeximages/Group 55.png"
+                    class="me-3"
+                    alt="Icon"
+                    width="40"
+                  />
+                  <div>
+                    <h6 class="mb-1">Meet relator</h6>
+                    <p class="mb-0 text-muted">
+                      Lorem ipsum dolor sit amet consectetur. Turpis a in
+                      laoreet libero pharetra hendrerit.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-3" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                  <img
+                    src="./images/indeximages/Group 56.png"
+                    class="me-3"
+                    alt="Icon"
+                    width="40"
+                  />
+                  <div>
+                    <h6 class="mb-1">Documents</h6>
+                    <p class="mb-0 text-muted">
+                      Lorem ipsum dolor sit amet consectetur. Turpis a in
+                      laoreet libero pharetra hendrerit.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                  <img
+                    src="./images/indeximages/Group 57.png"
+                    class="me-3"
+                    alt="Icon"
+                    width="40"
+                  />
+                  <div>
+                    <h6 class="mb-1">Take the keys</h6>
+                    <p class="mb-0 text-muted">
+                      Lorem ipsum dolor sit amet consectetur. Turpis a in
+                      laoreet libero pharetra hendrerit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Image Section -->
+            <div
+              class="col-md-6 position-relative d-flex justify-content-center mt-3"
+            >
+              <!-- Background red box (as image) -->
+              <img
+                src="./images/indeximages/Rectangle 62.png"
+                alt="Red Box"
+                class="img-fluid z-1 red-box-img"
+              />
+
+              <!-- Foreground image (man holding key) -->
+              <img
+                src="./images/indeximages/image (6).png"
+                alt="Man holding key"
+                class="position-absolute z-2 main-img w-100"
+              />
+
+              <!-- Badge -->
+              <div class="badge-box position-absolute z-3">
+                <div
+                  class="bg-danger text-white p-3 rounded text-center shadow"
+                >
+                  <img
+                    src="./images/indeximages/Group 58.png"
+                    alt="icon"
+                    width="40"
+                    class="mb-2"
+                  />
+                  <strong>14K+</strong><br />
+                  PROPERTY SALE
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 bg-danger text-white logo-slider">
+        <div class="container position-relative">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper align-items-center">
+              <!-- Slides (Logos) -->
+              <div class="swiper-slide text-center">
+                <img
+                  src="./images/indeximages/image 191.png"
+                  alt="Logo 1"
+                  class="img-fluid logo-img"
+                />
+              </div>
+              <div class="swiper-slide text-center">
+                <img
+                  src="./images/indeximages/image 190.png"
+                  alt="Logo 2"
+                  class="img-fluid logo-img"
+                />
+              </div>
+              <div class="swiper-slide text-center">
+                <img
+                  src="./images/indeximages/image 187.png"
+                  alt="Logo 3"
+                  class="img-fluid logo-img"
+                />
+              </div>
+              <div class="swiper-slide text-center">
+                <img
+                  src="./images/indeximages/image 189.png"
+                  alt="Logo 4"
+                  class="img-fluid logo-img"
+                />
+              </div>
+              <div class="swiper-slide text-center">
+                <img
+                  src="./images/indeximages/image 192.png"
+                  alt="Logo 5"
+                  class="img-fluid logo-img"
+                />
+              </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+          </div>
+        </div>
+      </section>
+      <section class="py-5 backGround">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Left Content -->
+            <div class="col-md-6 mb-4 mb-md-0">
+              <h2 class="fw-bold mb-3">What Customer Saying <br />About us?</h2>
+              <p class="text-muted mb-4">
+                Lorem ipsum dolor sit amet consectetur. Turpis a in laoreet libero pharetra hendrerit.
+              </p>
+              <div class="d-flex">
+                <div class="mb-3">
+                  <div class="me-5">
+                    <h6 class="fw-bold mb-0">Overall Rating</h6>
+                    <p class="fs-4 fw-bold mb-1 text-center">4</p>
+                  </div>
+                  <div class="text-warning">
+                    <i class="fas fa-star me-2"></i>
+                    <i class="fas fa-star me-2"></i>
+                    <i class="fas fa-star me-2"></i>
+                    <i class="fas fa-star me-2"></i>
+                  </div>
+                </div>
+                <div class="ms-5">
+                  <h6 class="fw-bold mb-0">Satisfy Customer</h6>
+                  <p class="fs-4 fw-bold text-center">10 K+</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Right Content (Carousel) -->
+            <div class="col-md-6">
+              <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+      
+                  <!-- Testimonial Item -->
+                  <div class="carousel-item active">
+                    <div class="d-flex align-items-center gap-4">
+                      <img
+                        src="./images/indeximages/image (7).png"
+                        alt="Customer"
+                        class="testimonial-image"
+                      />
+                      <div>
+                        <i class="fas fa-quote-left quote-icon mb-3 d-block"></i>
+                        <p class="text-muted mb-2">
+                          Lorem ipsum dolor sit amet consectetur. Morbi sit etiam elemen tempor adipiscing sed bibendum.
+                          Sed pellentesque risus eget fringilla neque eget quis.
+                        </p>
+                        <hr class="thickNess"/>
+                        <h6 class="mb-0 fw-bold">Tcs</h6>
+                        <small class="text-muted">Software Engineering</small>
+                      </div>
+                    </div>
+                  </div>
+      </section>
+      <section class="newsletter-section">
+        <div class="container">
+          <div class="row justify-content-end">
+            <div class="col-md-6">
+              <div class="newsletter-box">
+                <h3 class="fw-bold mb-3">Sign to Newsletter</h3>
+                <p class="text-muted mb-4">
+                  Lorem ipsum dolor sit amet consectetur. Turpis a in laoreet libero pharetra hendrerit.
+                </p>
+                <form class="d-flex">
+                  <input type="email" class="form-control me-2" placeholder="Enter Email" required />
+                  <button type="submit" class="btn btn-subscribe px-4">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer py-3">
+      <div class="container">
+
+        <!-- Top Row -->
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+          <!-- Logo -->
+          <div class="company-logo mb-3 mb-md-0">
+            <a href="#">
+              <img src="./images/indeximages/REAL ESATE LOGO (1).png" alt="logo_footer_realestate">
+            </a>
+          </div>
+    
+          <!-- Social Icons -->
+          <div class="follow-us-social-links">
+            <p class="footer-title mb-2 text-center">Follow us</p>
+            <div class="social-icons text-end">
+              <a href="#"><i class="fab fa-facebook-f mx-1"></i></a>
+              <a href="#"><i class="fab fa-instagram mx-1"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in mx-1"></i></a>
+              <a href="#"><i class="fab fa-twitter mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <hr>
+    
+        <!-- Middle Row -->
+        <div class="row gy-4 py-3">
+          <!-- Quick Links -->
+          <div class="col-6 col-md-3">
+            <p class="footer-title">Quick Links</p>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./agent.html">Agent</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./property.html">Property</a></li>
+              <li><a href="./contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+    
+          <!-- Address -->
+          <div class="col-6 col-md-3">
+            <p class="footer-title">Our Address</p>
+            <p>Kolkata, Sector-5, College More</p>
+            <p>568586, West Bengal</p>
+          </div>
+    
+          <!-- Contact Info -->
+          <!-- <div class="col-6 col-md-3">
+            <p class="footer-title">Contact Us</p>
+            <p>Gmail - guchhaitgbca@gmail.com</p>
+            <p>Ph No - 09345678677</p>
+          </div> -->
+
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <p class="footer-title">Contact Us</p>
+            <p class="mb-1">Gmail - <span class="text-break">guchhaitgbca@gmail.com</span></p>
+            <p class="mb-0">Ph No - 09345678677</p>
+          </div>
+          
+    
+          <!-- App Buttons -->
+          <div class="col-6 col-md-3">
+            <p class="footer-title">Get The App</p>
+            <a href="#" class="d-inline-block mb-2 w-100"><img src="./images/indeximages/Group 69.png" alt="gplay" class="img-fluid w-100"></a><br>
+            <a href="#" class="d-inline-block w-100"><img src="./images/indeximages/Group 70.png" alt="appStore" class="img-fluid w-100 mt-3"></a>
+          </div>
+        </div>
+    
+        <hr>
+    
+        <!-- Bottom -->
+        <div class="footer-bottom text-center">
+          Copy Right &copy;Toyesh Ganguli | 2025, FIND HOME
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

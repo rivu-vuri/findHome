@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+p{
+    font-family: "Poppins", sans-serif; 
+}
+
+/* nav-section */
+
+.navbar-nav .nav-link.active{
+    border-bottom: 2px solid #e85d75;
+    color: #e85d75;;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #e85d75;
+    border-bottom: 2px solid #e85d75;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    color: #e85d75;
+    border-bottom: 2px solid #e85d75;
+    font-weight: 600;
+}
+
+/* hero-section */
+
+.hero-section h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section{
+    background-image: url('../images/indeximages/scyscraper-city-evening-sunset-view-concept.png');
+    background-color: #27262682;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 100vh;
+    padding-top: 180px; 
+}
+  
+.hero-section select:focus,
+.hero-section button:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+/* search-bar-portion */
+
+/* .dropdown-menu-hover{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9999;
+    min-width: 180px;
+    padding: 0.5rem 0;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.dropdown:hover .dropdown-menu-hover{
+    display: block;
+}
+
+.dropdown-item{
+    padding: 0.5rem 1rem;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    width: 100%;
+    font-weight: normal;
+    transition: 0.3s;
+} */
+
+.dropdown-menu-hover{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    background-color: #fff;
+    padding: 8px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: none;
+}
+  
+  /* Show dropdown on hover */
+.dropdown:hover .dropdown-menu-hover{
+    display: block;
+}
+  
+  /* Dropdown items default + hover style */
+.dropdown-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #000;
+    padding: 8px 16px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+  
+
+.dropdown-item:hover,
+.dropdown-item.active{
+    color: #dc3545;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+/* stat-section */
+
+.stats-card{
+    top: -40px;
+    left: 0;
+    max-width: 720px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 80px;
+    z-index: 3;
+}
+
+/* .stats-section{
+    height: 120px;
+    margin-top: -60px;
+}
+  
+.stats-box{
+    max-width: 600px;
+    left: 0;
+    right: auto;
+    bottom: -40px;
+} */
+
+.glass-card{
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(30%); /* Push upward */
+}
+
+/* why-should-work-with-us-section */
+
+.background{
+    background-color: #FFF8F2;
+}
+
+/* looking-for-buy-section */
+
+.bgcolor{
+    background-color: #e7c87356;
+}
+
+.width_buy_cell{
+    max-width: 350px;
+}
+
+/* .bg-pink-box{
+    background-color: #e91e63;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+  
+.real-estate-img{
+    position: relative;
+    top: -20px;
+    left: -10px;
+    border-radius: 10px;
+    z-index: 2;
+} */
+
+.red-box-img{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    /* position: relative; */
+    transform: translate(-30px, 20px);
+    /* transition: transform 0.3s ease; */
+    /* z-index: 1; */
+}
+  
+.lady-img{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 2; */
+}
+
+.font-style{
+    font-stretch: extra-expanded;
+}
+
+/* find-a-perfect-home-section */
+
+.main-img{
+    top: -20px;
+    left: -20px;
+    transform: translate(95px, -50px);
+    max-width: 400px;
+}
+
+.red-box-img{
+    max-width: 350px;
+}
+  
+.badge-box{
+    top: 30px;
+    left: 30px;
+    transform: translateY(130px);
+}
+
+.m-width{
+    max-width: 380px;
+}
+
+/* company-slider-swiftjs */
+
+
+.logo-slider{
+    background-color: #d32f2f;
+}
+  
+.logo-img{
+    max-height: 80px;
+    max-width: 150px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* white logo effect if needed */
+}
+
+/* customer-feedback-section */
+
+.backGround{
+    background-color: #fbdf994e;
+}
+
+.testimonial-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-icon{
+    font-size: 30px;
+    color: #555;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.thickNess{
+    border-bottom: 3px solid gray;
+}
+
+/* news-letter-section */
+
+.newsletter-section{
+    background-image: url("/images/indeximages/image\ 194.png");
+    background-color: #33323262;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    padding: 80px 0;
+    position: relative;
+}
+
+.newsletter-box{
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    max-width: 450px;
+    margin-left: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #dc3545;
+}
+
+.btn-subscribe{
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-subscribe:hover{
+    background-color: #bb2d3b;
+}
+  
+/* footer-section */
+
+.footer{
+    background-color: #434681;
+    color: white;
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+  
+.footer-title{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+  
+.social-icons a{
+    color: #fff;
+    margin-right: 12px;
+    font-size: 18px;
+}
+  
+/* .app-btn{
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    width: 180px;
+    font-size: 14px;
+} */
+  
+.app-btn i{
+    margin-right: 8px;
+    font-size: 18px;
+}
+  
+hr{
+    border-color: rgba(255,255,255,0.3);
+}
+  
+.footer-bottom{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 1199px) {
+    
+}
+
+@media screen and (max-width: 991px) {
+    /* nav-section */
+
+    nav.navbar{
+        border-radius: 0 !important;
+        width: 100% !important;
+        left: 0 !important;
+        transform: none !important;
+        margin-top: 0;
+    }
+    
+    .navbar-collapse{
+        background-color: white;
+        border-radius: 0 0 12px 12px;
+        padding: 1rem;
+    }
+    
+    .navbar-nav{
+        flex-direction: column !important;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .navbar-nav .nav-item{
+        width: 100%;
+    }
+    
+    .navbar-nav .nav-link{
+        display: block;
+        padding-left: 0;
+        border: none;
+    }
+    
+    .d-flex.gap-2{
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    
+    .d-flex.gap-2 a{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* find-a-perfect-home */
+
+    .main-img{
+        transform: translate(50px, -30px);
+        max-width: 350px;
+    }
+    
+    .red-box-img{
+        max-width: 300px;
+    }
+    
+    .badge-box{
+        transform: translateY(100px);
+    }
+
+    /* footer-section */
+
+    .footer-title{
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+    }
+    
+      .footer-section .col-12{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* .stats-box{
+        position: relative !important;
+        margin-top: 20px;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        max-width: 100%;
+        border-radius: 1rem;
+    }
+    
+    .stats-section{
+        height: auto;
+        margin-top: 20px;
+    } */
+
+    /* search-bar-portion */
+
+    .dropdown-menu-hover{
+        position: static;
+        width: 100%;
+    }
+
+    .stats-card{
+        position: relative !important;
+        top: 0;
+        left: 0;
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 1rem !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* glass-card */
+
+    .glass-card{
+        transform: translateY(15%);
+        padding: 1rem !important;
+    }
+
+    /* looking-to-buy-or-sell-home */
+
+    .red-box-img{
+        transform: translate(-15px, 10px);
+    }
+
+    /* find-a-perfect-home */
+
+    .main-img{
+        transform: translate(20px, -20px);
+        max-width: 300px;
+    }
+    
+    .red-box-img{
+        max-width: 270px;
+    }
+    
+    .badge-box{
+        top: 10px;
+        left: 10px;
+        transform: translateY(80px);
+    }
+    
+    .m-width{
+        max-width: 100%;
+    }
+
+    /* newsLetter-section */
+
+    .newsletter-box{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    /* looking-to-buy-or-sell-home */
+    .red-box-img{
+        transform: translate(-10px, 6px);
+    }
+    
+    .lady-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    /* find-a-perfect-home */
+
+    .main-img{
+        transform: translate(10px, -10px);
+        max-width: 100%;
+    }
+    
+    .red-box-img{
+        max-width: 100%;
+    }
+    
+    .badge-box{
+        transform: translateY(60px);
+        left: 5px;
+        top: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* nav-bar-section */
+
+    .navbar-nav .nav-link{
+        font-size: 14px;
+    }
+    
+    .navbar-brand img{
+        max-width: 120px;
+    }
+
+    /* search-bar-portion */
+
+    .bg-dark-subtle{
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .bg-dark-subtle > .dropdown,
+    .bg-dark-subtle > button{
+        width: 100% !important;
+        max-width: 280px;
+    }
+    
+    .dropdown-menu-hover{
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .form-select,
+    .btn{
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .setThisButton{
+        margin: 0 30px;
+    }
+
+    /* best-properties */
+
+    /* .property-card{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    .property-card .text-end{
+        width: 100%;
+        text-align: right;
+        margin-top: 1rem;
+    }
+    
+    .property-card .btn{
+        width: 25%;
+        height: 25%;
+        padding: 0;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    } */
+
+    /* looking-to-buy-sell home-section */
+
+    .mLeft{
+        margin-left: 60px;
+    }
+
+    .leftMargin{
+        margin-left: 15px;
+    }
+
+    /* footer-section */
+
+    .footer-section p{
+        font-size: 14px;
+        word-break: break-word;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+}
